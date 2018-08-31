@@ -156,8 +156,8 @@ install_bower_deps() {
 
 compile() {
   cd $phoenix_dir
-  PATH=$build_dir/.platform_tools/erlang/bin:$PATH
-  PATH=$build_dir/.platform_tools/elixir/bin:$PATH
+  PATH=/app/.platform_tools/erlang/bin:$PATH
+  PATH=/app/.platform_tools/elixir/bin:$PATH
 
   run_compile
 }
